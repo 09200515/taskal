@@ -7,15 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    
-    @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var taskTableView: UITableView!
-    
-
+    @IBOutlet weak var taskTextField: UITextField!
     
     var taskArray = [String]()
     
@@ -31,21 +26,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
-        
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
+        let cell = taskTableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath)
+        cell.textLabel?.text = taskArray[indexPath.row]
         
-        let cellLabel = cell.contentView.viewWithTag(2) as! UILabel
-        
-        cellLabel.text = taskArray[indexPath.row]
         return cell
     }
     
@@ -57,7 +50,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         taskArray.append(taskTextField.text!)
         taskTextField.text = ""
         
+        print(taskArray)
+        taskTableView.reloadData()
+        
     }
+    
     
 }
 

@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="49" id="MG7-Yy-3Xn">
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellID" rowHeight="49" id="MG7-Yy-3Xn">
                                         <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MG7-Yy-3Xn" id="S9l-ri-vmh">
@@ -59,7 +59,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
-                                    <action selector="taskCreate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iU-Ly-EmA"/>
+                                    <action selector="taskCreate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewZ-SW-9pJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,9 +68,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="eBj-tO-vJa"/>
                     <connections>
-                        <outlet property="dateLabel" destination="Org-Ej-RPe" id="yjT-MP-M7n"/>
-                        <outlet property="taskTableView" destination="L7N-Lb-DzN" id="Yev-nv-aJp"/>
-                        <outlet property="taskTextField" destination="h4j-S5-NbR" id="fYn-Ad-QHi"/>
+                        <outlet property="taskTableView" destination="L7N-Lb-DzN" id="U5y-Qc-vA2"/>
+                        <outlet property="taskTextField" destination="h4j-S5-NbR" id="eVN-0N-Tfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
