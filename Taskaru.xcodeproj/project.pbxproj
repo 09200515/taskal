@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		369FB45EDDDB9F0B8DC248E5 /* Pods_Taskaru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBBDF073D93A7A180BF62F8 /* Pods_Taskaru.framework */; };
 		C44A555A266B504100D05CA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A5559266B504100D05CA7 /* AppDelegate.swift */; };
 		C44A555C266B504100D05CA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A555B266B504100D05CA7 /* SceneDelegate.swift */; };
 		C44A555E266B504100D05CA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A555D266B504100D05CA7 /* ViewController.swift */; };
 		C44A5561266B504100D05CA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44A555F266B504100D05CA7 /* Main.storyboard */; };
 		C44A5563266B504300D05CA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44A5562266B504300D05CA7 /* Assets.xcassets */; };
 		C44A5566266B504300D05CA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44A5564266B504300D05CA7 /* LaunchScreen.storyboard */; };
+		C44A556E266DC77400D05CA7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A556D266DC77400D05CA7 /* CalendarViewController.swift */; };
+		C44A5570266DD56F00D05CA7 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A556F266DD56F00D05CA7 /* CalendarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85EA5E079C45212C71E99777 /* Pods-Taskaru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taskaru.debug.xcconfig"; path = "Target Support Files/Pods-Taskaru/Pods-Taskaru.debug.xcconfig"; sourceTree = "<group>"; };
+		B54800C67165213C27F9160B /* Pods-Taskaru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taskaru.release.xcconfig"; path = "Target Support Files/Pods-Taskaru/Pods-Taskaru.release.xcconfig"; sourceTree = "<group>"; };
+		BFBBDF073D93A7A180BF62F8 /* Pods_Taskaru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taskaru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44A5556266B504100D05CA7 /* Taskaru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskaru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44A5559266B504100D05CA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44A555B266B504100D05CA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		C44A5562266B504300D05CA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44A5565266B504300D05CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44A5567266B504300D05CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44A556D266DC77400D05CA7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C44A556F266DD56F00D05CA7 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369FB45EDDDB9F0B8DC248E5 /* Pods_Taskaru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				C44A5558266B504100D05CA7 /* Taskaru */,
 				C44A5557266B504100D05CA7 /* Products */,
+				D37B4CC936B1621F3A7FB633 /* Pods */,
+				D4A66A804D3985EDA173EF40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				C44A5559266B504100D05CA7 /* AppDelegate.swift */,
 				C44A555B266B504100D05CA7 /* SceneDelegate.swift */,
 				C44A555D266B504100D05CA7 /* ViewController.swift */,
+				C44A556F266DD56F00D05CA7 /* CalendarModel.swift */,
+				C44A556D266DC77400D05CA7 /* CalendarViewController.swift */,
 				C44A555F266B504100D05CA7 /* Main.storyboard */,
 				C44A5562266B504300D05CA7 /* Assets.xcassets */,
 				C44A5564266B504300D05CA7 /* LaunchScreen.storyboard */,
 				C44A5567266B504300D05CA7 /* Info.plist */,
 			);
 			path = Taskaru;
+			sourceTree = "<group>";
+		};
+		D37B4CC936B1621F3A7FB633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85EA5E079C45212C71E99777 /* Pods-Taskaru.debug.xcconfig */,
+				B54800C67165213C27F9160B /* Pods-Taskaru.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4A66A804D3985EDA173EF40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBDF073D93A7A180BF62F8 /* Pods_Taskaru.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44A556A266B504300D05CA7 /* Build configuration list for PBXNativeTarget "Taskaru" */;
 			buildPhases = (
+				4716D67BF01590C0EE206F4C /* [CP] Check Pods Manifest.lock */,
 				C44A5552266B504100D05CA7 /* Sources */,
 				C44A5553266B504100D05CA7 /* Frameworks */,
 				C44A5554266B504100D05CA7 /* Resources */,
+				3E263F8E53702CD3DE2F66ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +164,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E263F8E53702CD3DE2F66ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taskaru/Pods-Taskaru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Taskaru/Pods-Taskaru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Taskaru/Pods-Taskaru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4716D67BF01590C0EE206F4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taskaru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C44A5552266B504100D05CA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44A556E266DC77400D05CA7 /* CalendarViewController.swift in Sources */,
+				C44A5570266DD56F00D05CA7 /* CalendarModel.swift in Sources */,
 				C44A555E266B504100D05CA7 /* ViewController.swift in Sources */,
 				C44A555A266B504100D05CA7 /* AppDelegate.swift in Sources */,
 				C44A555C266B504100D05CA7 /* SceneDelegate.swift in Sources */,
@@ -283,6 +359,7 @@
 		};
 		C44A556B266B504300D05CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85EA5E079C45212C71E99777 /* Pods-Taskaru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +373,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.tyaba383917283.Taskaru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C44A556C266B504300D05CA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54800C67165213C27F9160B /* Pods-Taskaru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.tyaba383917283.Taskaru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
